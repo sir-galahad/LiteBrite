@@ -65,8 +65,18 @@ void liteb_setblock(int x, int y, int color)
     mvaddch(y,x,lb_colors[color]);
 }
 
+int liteb_get_maxx()
+{
+	return getmaxx(stdscr)-1;
+}
+
+int liteb_get_maxy()
+{
+	return getmaxy(stdscr)-1;
+}
 void liteb_exit()
 {
     endwin();
 }
+
 
