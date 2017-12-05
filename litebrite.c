@@ -1,4 +1,5 @@
 
+#include <ncurses.h>
 #include "litebrite.h"
 
 chtype lb_colors[16];

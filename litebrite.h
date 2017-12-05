@@ -3,7 +3,6 @@
 
 #define lb_h
 #include<stdio.h>
-#include<ncurses.h>
 #include<locale.h>
 void liteb_init();
 void liteb_clear(int color);
