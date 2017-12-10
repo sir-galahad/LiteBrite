@@ -26,3 +26,6 @@ liteb_get_maxy();
 
 void 
 liteb_exit();
+
+int
+liteb_getkey();

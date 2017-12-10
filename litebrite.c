@@ -25,6 +25,7 @@ void liteb_init()
     nonl();
     intrflush(stdscr, FALSE);
     keypad(stdscr,TRUE);
+	nodelay(stdscr,TRUE);
     curs_set(0); 
     for(x=0;x<8;x++){
         init_pair(x,x,x);
@@ -80,4 +81,8 @@ void liteb_exit()
     endwin();
 }
 
+int liteb_getkey(void)
+{
+	return getch();
+}
 
